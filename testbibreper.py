@@ -1,0 +1,10 @@
+def ajouter_un_contact():
+    nom=input("donner votre nom")
+    prenom=input("donner votre prenom")
+    age=input("donner votre age")
+    tel=input("donner votre tel")
+    monfichier=open("contact.txt" ,"w", encoding="UTF-8")
+    monfichier.write(nom+"\n")
+    monfichier.write(prenom+"\n")
+    monfichier.write(tel+"\n")
+    monfichier.write(age+"\n")
